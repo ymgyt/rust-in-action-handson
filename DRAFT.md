@@ -70,3 +70,13 @@ The language is also comprehensive.
 
 ## chapter2 LANGUAGE FOUNDATIONS
 
+## chapter12 SIGNALS, INTERRUPTS AND EXCEPTIONS
+
+The two concepts that are most important to distinguish are signals and interrupts.  
+A signal is a software-level abstraction that is associated with an operating system.  
+An interrupt is a CPU-related abstraction and ic closely associated with the system's hardware.
+
+Signals are a form of limited inter-process communication.  
+They don't contain content, but their presence indicate something.
+
+signalがsoftware interruptと表現されたりするから紛らわしい。
