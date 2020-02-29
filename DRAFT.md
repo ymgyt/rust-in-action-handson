@@ -70,6 +70,9 @@ The language is also comprehensive.
 
 ## chapter2 LANGUAGE FOUNDATIONS
 
+Rustのsyntaxやprimitive typeについて簡単に触れたあと、grep likeなcliを作ります。
+
+
 ## chapter12 SIGNALS, INTERRUPTS AND EXCEPTIONS
 
 The two concepts that are most important to distinguish are signals and interrupts.  
