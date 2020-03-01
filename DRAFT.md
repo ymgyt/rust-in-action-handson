@@ -72,6 +72,20 @@ The language is also comprehensive.
 
 Rustのsyntaxやprimitive typeについて簡単に触れたあと、grep likeなcliを作ります。
 
+## chapter3 Compound Data Types
+
+自作の`std::fs::File`を作りながら、struct, enumについて学びます。  
+`Vec<u8>`には`io::Write`が実装されていて便利だなと思いました。
+
+## chapter4 LIFETIMES, OWNERSHIP AND BORROWING
+
+Rustの所有権システム、borrow checker, Rcといったトピックを扱います。
+
+## chapter5 DATA IN DEPTH
+
+* integerのoverflowについて  
+* endian
+* floating point(IEEE754の単精度倍数を通じてのlsbit manipulation)
 
 ## chapter12 SIGNALS, INTERRUPTS AND EXCEPTIONS
 
