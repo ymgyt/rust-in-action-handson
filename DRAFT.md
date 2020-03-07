@@ -85,7 +85,11 @@ Rustの所有権システム、borrow checker, Rcといったトピックを扱�
 
 * integerのoverflowについて  
 * endian
-* floating point(IEEE754の単精度倍数を通じてのlsbit manipulation)
+* floating point(IEEE754の単精度倍数を通じてのbit manipulation)
+
+chip8という命令セット?の非常に簡易的なemulatorを作りながら、bit manipulationの利用例やstackの概念を学べます。
+既にRustで作成されている方もおられるようです。
+https://qiita.com/yukinarit/items/4bdc821f1e46b0688d0d
 
 ## chapter12 SIGNALS, INTERRUPTS AND EXCEPTIONS
 
