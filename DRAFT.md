@@ -91,6 +91,40 @@ chip8という命令セット?の非常に簡易的なemulatorを作りながら
 既にRustで作成されている方もおられるようです。
 https://qiita.com/yukinarit/items/4bdc821f1e46b0688d0d
 
+## chapter6 MEMORY
+
+* Rust uses the same underlying representation in memory for multiple semantics.  
+  For example, `&T`,`&mut T` both look the same once your source code has been compiled.
+  
+* The terms pointer and address are sometimes used interchangeably.  
+  There is one important difference. A pointer knows its referent's width in bytes
+  
+* Raw pointers should be considered an intermediary step between receiving something from the operation system
+  or another programming language and into a reference.
+  
+* Raw Pointer
+  * They do no own their values. The Rust compiler does not check that the referent data is still valid  
+    when they're accessed.
+    
+  * Multiple raw pointer to the same data is allowed. Every raw pointer can have write/read access to that data.
+  
+```rust
+fn main() {
+    let a: i64 = 42;
+    let a_ptr = &a as *const i64;
+    // transmute() interprets the bytes at the location as another types.
+    let a_addr: usize = unsafe { std::mem::transmute(a_ptr) };
+
+    println!("a: {} ({:p}...0x{:x})", a, a_ptr, a_addr + 7);
+}
+```
+
+* HeapとStack
+
+* Virtual Memory
+
+## chapter 7
+
 ## chapter12 SIGNALS, INTERRUPTS AND EXCEPTIONS
 
 The two concepts that are most important to distinguish are signals and interrupts.  
