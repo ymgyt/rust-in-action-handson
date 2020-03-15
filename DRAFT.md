@@ -125,6 +125,11 @@ fn main() {
 
 ## chapter 7
 
+この章では、active kvという非常にシンプルなkey value storeを作ります。CRCとkey,valueの長さをもつ固定長ヘッダーとkey valueの情報を
+append onlyでFileに保存して、cliでCRUD操作を提供するものです。  
+この章あたりからいよいよ実用性があるものを作っていくので楽しくなっていきます。
+crcやbyteorder crateの使い方も学べます。
+
 ## chapter12 SIGNALS, INTERRUPTS AND EXCEPTIONS
 
 The two concepts that are most important to distinguish are signals and interrupts.  
