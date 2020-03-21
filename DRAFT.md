@@ -123,12 +123,32 @@ fn main() {
 
 * Virtual Memory
 
-## chapter 7
+## chapter 7 FILES & STORAGE
 
 この章では、active kvという非常にシンプルなkey value storeを作ります。CRCとkey,valueの長さをもつ固定長ヘッダーとkey valueの情報を
 append onlyでFileに保存して、cliでCRUD操作を提供するものです。  
 この章あたりからいよいよ実用性があるものを作っていくので楽しくなっていきます。
 crcやbyteorder crateの使い方も学べます。
+
+## chapter 8 NETWORKING
+
+* trait object
+  `Box<dyn std::error::Error>` means a pointer to any type implements `std::error::Error`
+
+  * Common usecase
+    * creating collections of heterogeneous objects  
+    * as a return value, they can enable functions to returning multiple concrete types.
+
+* trust-dnsを利用した名前解決
+
+* TUN/TAPとsmoltcpを利用して、自前でhttp GETを実装する。TUN/TAPとsmoltcpを利用する箇所が難しく、理解できませんでした。
+  ネットワークまわりの理解を深めてから再挑戦したいです。
+
+## chapter 9 TIME AND TIME KEEPING
+
+* Some of the hardest software engineering involves distributed systems that need to agree on what the time is.
+
+
 
 ## chapter12 SIGNALS, INTERRUPTS AND EXCEPTIONS
 
